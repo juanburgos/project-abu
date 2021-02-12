@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Abu</title>
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Project Abu - A Puerto Rican Book of Recipes</title>
 </head>
+
 <body>
-    
+
+    <div class="container pt-3 my-3 text-center">
+        <div class="row mt-5 mb-5">
+            <div class="col">
+                <h1>Project Abu</h1>
+                <h6 class="text-monospace">A Puerto Rican Book of Recipes.</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <form>
+                    <input type="text" class="form-control form-control-lg text-center" placeholder="Search for recipe">
+                    <button type="submit" class="btn btn-dark btn-lg my-5">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="nav fixed-bottom justify-content-center bg-dark py-5">
+        <a class="nav-link active text-white" href="#">Home</a>
+        <a class="nav-link btn btn-outline-light" href="#">Recipes</a>
+        <a class="nav-link text-white dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">More</a>
+        <div class="dropdown-menu">
+
+            <a class="dropdown-item" href="#">About Us</a>
+            <a class="dropdown-item" href="#">Contact Us</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Sign-in</a>
+        </div>
+    </nav>
 </body>
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+
 </html>
