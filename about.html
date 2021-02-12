@@ -20,23 +20,83 @@
     <header>
         <nav class="nav fixed-top bg-dark py-2 justify-content-center">
 
-            <a class="btn btn-social-icon btn-twitter text-white">
+            <a class="btn btn-social-icon btn-twitter text-white" href="https://twitter.com" target="_blank">
                 <span class="fa fa-twitter"></span>
             </a>
-            <a class="nav-link active text-white" href="#">SIGN IN</a>
-            <a class="btn btn-social-icon btn-facebook text-white">
+            <a id="signInButton" class="nav-link active text-white" href="#">SIGN IN</a>
+            <a class="btn btn-social-icon btn-facebook text-white" href="https://facebook.com" target="_blank">
                 <span class="fa fa-facebook"></span>
             </a>
 
         </nav>
+
+        <div id="signInModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h3 class="modal-title">SIGN IN</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                            placeholder="Enter email">
+                                    </div>
+
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                            placeholder="Password">
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label"> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="container mt-5 text-center">
         <div class="row">
             <div class="col">
                 <h1>About us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Aliquet sagittis id consectetur purus ut faucibus. Eu augue ut lectus arcu bibendum. Eget nunc lobortis mattis aliquam faucibus purus in. Porttitor eget dolor morbi non. Consectetur adipiscing elit duis tristique sollicitudin. Mauris vitae ultricies leo integer malesuada nunc vel risus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Consectetur lorem donec massa sapien faucibus et. Gravida in fermentum et sollicitudin.</p>
-                <p>Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Dictum sit amet justo donec enim diam vulputate ut pharetra. Scelerisque varius morbi enim nunc faucibus a pellentesque sit. Est placerat in egestas erat imperdiet. Ut eu sem integer vitae. Diam quam nulla porttitor massa id neque aliquam vestibulum. Sit amet consectetur adipiscing elit ut aliquam purus sit. Orci eu lobortis elementum nibh tellus molestie nunc non. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Augue mauris augue neque gravida in. Nisl suscipit adipiscing bibendum est ultricies integer quis. Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Massa tincidunt nunc pulvinar sapien et. Hendrerit dolor magna eget est lorem ipsum. Eget arcu dictum varius duis at consectetur lorem. Eget arcu dictum varius duis at. Dictum sit amet justo donec enim diam vulputate.</p>
+
+                <p>A centralized database for authentic Puerto Rican recipes. The goal is to present our tradition to
+                    current and future generations. </p>
+                <p>Abu is short for abuela which means grandmother. So it would be like saying granny or grandma in
+                    Puerto Rican lingo. Grandmothers typically connect us with the nostalgia of good cooking and the
+                    comfort we receive from it. Hoping this website become more that just another recipe website, but
+                    also a hub for learning, memory making and experience sharing for Puerto Ricans and users worldwide
+                    altogether.</p>
+
+                
+
+                <img src="img/fogon.jpg" class="rounded img-fluid" alt="fogon">
+
+
+
+
             </div>
 
         </div>
@@ -56,11 +116,11 @@
 
 
 
-    <nav class="nav fixed-bottom justify-content-center bg-dark py-5">
+    <nav class="nav fixed-bottom justify-content-center bg-dark py-4">
         <a class="nav-link text-white" href="index.html">HOME</a>
         <a class="nav-link btn btn-outline-light" href="#">RECIPES</a>
-        <a class="nav-link text-white" href="#">ABOUT</a>
-        
+        <a class="nav-link text-white active" href="#">ABOUT</a>
+
     </nav>
 </body>
 
