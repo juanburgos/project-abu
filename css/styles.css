@@ -22,3 +22,8 @@ p {
     height: 200px!important;
     object-fit: cover;
  }
+
+ .recipe-cat {
+    margin: 10px;
+    min-width: 100px;
+ }
