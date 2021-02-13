@@ -23,7 +23,15 @@ p {
     object-fit: cover;
  }
 
- .recipe-cat {
+ .recipe-category {
     margin: 10px;
     min-width: 100px;
+ }
+
+ .recipe-layout {
+     text-align: left;
+ }
+
+ .recipe-layout.p {
+     max-width: max-content;
  }

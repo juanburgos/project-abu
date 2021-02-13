@@ -30,16 +30,16 @@
 
         </nav>
         <div id="signInModal" class="modal fade" role="dialog">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header bg-dark text-white">
                         <h3 class="modal-title">SIGN IN</h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-    
+
                     <div class="modal-body">
                         <div class="container-fluid">
-    
+
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-12">
@@ -47,13 +47,13 @@
                                         <input type="email" class="form-control form-control-sm" id="loginEmail"
                                             placeholder="Enter email">
                                     </div>
-    
+
                                     <div class="form-group col-12">
                                         <label class="sr-only" for="loginPassword">Password</label>
                                         <input type="password" class="form-control form-control-sm" id="loginPassword"
                                             placeholder="Password">
                                     </div>
-    
+
                                     <div class="col">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox">
@@ -61,14 +61,14 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="form-row">
                                     <button type="button" class="btn btn-secondary btn-sm ml-auto"
                                         data-dismiss="modal">Cancel</button>
                                     <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                                 </div>
                             </form>
-    
+
                         </div>
                     </div>
                 </div>
@@ -97,56 +97,111 @@
         <div class="card-group">
 
             <div class="card">
-                <img src="img/mofongo.jpg" class="card-img-top card-img" alt="...">
+                <img src="img/mofongo.jpg" class="card-img-top card-img" alt="mofongo">
                 <div class="card-body">
                     <h5 class="card-title">Mofongo</h5>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">GO TO RECIPE</small>
+                    <a class="btn btn-outline-secondary recipe-demo" href="#"><small>CLICK FOR RECIPE</small>
+                    </a>
                 </div>
             </div>
             <div class="card">
-                <img src="img/tostones.jpg" class="card-img-top card-img" alt="...">
+                <img src="img/tostones.jpg" class="card-img-top card-img" alt="tostones">
                 <div class="card-body">
                     <h5 class="card-title">Tostones</h5>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">GO TO RECIPE</small>
+                    <a class="btn btn-outline-secondary recipe-demo" href="#"><small>CLICK FOR RECIPE</small>
+                    </a>
                 </div>
             </div>
             <div class="card">
-                <img src="img/maduros.jpg" class="card-img-top card-img" alt="...">
+                <img src="img/maduros.jpg" class="card-img-top card-img" alt="maduros">
                 <div class="card-body">
                     <h5 class="card-title">Maduros</h5>
                 </div>
                 <div class="card-footer">
-                    <small class="col-sm-6 text-muted">GO TO RECIPE</small>
+                    <a class="btn btn-outline-secondary recipe-demo" href="#"><small>CLICK FOR RECIPE</small></a>
                 </div>
 
             </div>
         </div>
 
+        <!--Modal for recipes starts here-->
+        <div id="recipeModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h3 class="modal-title">Demo Recipe</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
 
+                    <div class="modal-body">
+                        <div class="container-fluid recipe-layout">
+                            <header>
+                                <section>
+                                    <h2>Mofongo</h2>
+                                </section>
 
+                                <section>
+                                    <p>Mashed green plantains with garlic, olive oil and pork rinds (or bacon). Mofongo
+                                        goes well with chicken or fish broth and can be stuffed with garlic shrimp,
+                                        carne frita or octopus salad. It can also be formed into small balls and dropped
+                                        in soups or served directly in a mortar. This is one of my many guilty
+                                        pleasures!</p>
+                                    <p>The recipe below is designed to act as a guide, and not something to be followed
+                                        prescriptively. Feel free to adjust amounts based on your tastes.</p>
+                                </section>
+                            </header>
+                            <article>
+                                <section id="ingredients">
+                                    <h3>Ingredients</h3>
+                                    <p>Serves 2 people</p>
+                                    <ul>
+                                        <li>3 cups canola oil for frying</li>
+                                        <li>3 cloves garlic, or to taste</li>
+                                        <li>3 tablespoons olive oil</li>
+                                        <li>⅛ cup crushed fried pork skins</li>
+                                        <li>2 green plantains, peeled and sliced into 1/2-inch rounds </li>
+                                        <li>Salt to taste</li>
+                                    </ul>
+                                </section>
+
+                                <section>
+                                    <h3>Preparation</h3>
+                                    <ul>
+                                        <li>Heat canola oil in a deep-fryer or large saucepan to 350 degrees F (175
+                                            degrees C).</li>
+                                        <li>Mash the garlic with the olive oil in a mortar and pestle.</li>
+                                        <li>Combine garlic mixture with the pork rinds in a large bowl; set aside.</li>
+                                        <li>Fry the plantain chunks until golden and crispy, but not brown, about 15
+                                            minutes.</li>
+                                        <li>Transfer the fried plantains into the bowl with the garlic mixture. Toss to
+                                            coat.</li>
+                                        <li>Mash the coated plantains with the mortar and pestle until smooth. Season
+                                            with salt.</li>
+                                        <li>Roll the plantain mixture into two large balls or several small balls before
+                                            serving.</li>
+
+                                    </ul>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="bookmarkRecipe" type="button" class="btn btn-outline-dark"><i
+                                class="fa fa-bookmark fa-lg" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-outline-dark" onclick="print()"><i
+                                class="fa fa-print fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal for recipes ends here-->
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <nav class="nav fixed-bottom justify-content-center bg-dark py-4">
         <a class="nav-link active text-white" href="#">HOME</a>
