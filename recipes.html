@@ -18,20 +18,22 @@
 <body>
 
     <header>
-        <nav class="nav fixed-top bg-dark py-2 justify-content-center">
-
-            <a class="btn btn-social-icon btn-twitter text-white" href="https://twitter.com" target="_blank">
-                <span class="fa fa-twitter"></span>
-            </a>
-            <a id="signInButton" class="nav-link active text-white" href="#">SIGN IN</a>
-            <a class="btn btn-social-icon btn-facebook text-white" href="https://facebook.com" target="_blank">
-                <span class="fa fa-facebook"></span>
-            </a>
-
+        <nav class="navbar navbar-dark bg-dark fixed-top justify-content-center">
+            <div class="navbar-nav">
+                <div class="row">
+                    <a class="nav-link btn-social-icon btn-twitter mx-3" href="https://twitter.com" target="_blank">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a id="signInButton" class="nav-link mx-3" href="#">SIGN IN</a>
+                    <a class="nav-link btn-social-icon btn-facebook mx-3" href="https://facebook.com" target="_blank">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                </div>
+            </div>
         </nav>
         <!--Sign In Modal Start-->
         <div id="signInModal" class="modal fade" role="dialog">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header bg-dark text-white">
                         <h3 class="modal-title">SIGN IN</h3>
@@ -173,11 +175,14 @@
 
     </div>
 
-    <nav class="nav fixed-bottom justify-content-center bg-dark py-4">
-        <a class="nav-link text-white" href="index.html">HOME</a>
-        <a class="nav-link btn btn-outline-light active" href="#">RECIPES</a>
-        <a class="nav-link text-white" href="about.html">ABOUT</a>
-
+    <nav class="navbar navbar-dark bg-dark fixed-bottom justify-content-center">
+        <div class="navbar-nav">
+            <div class="row">
+                <a class="nav-link mx-3" href="index.html">HOME</a>
+                <a class="nav-link active mx-3" href="#">RECIPES</a>
+                <a class="nav-link mx-3" href="about.html">ABOUT</a>
+            </div>
+        </div>
     </nav>
 </body>
 

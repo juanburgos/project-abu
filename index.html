@@ -18,17 +18,21 @@
 <body>
 
     <header>
-        <nav class="nav fixed-top bg-dark py-2 justify-content-center">
 
-            <a class="btn btn-social-icon btn-twitter text-white" href="https://twitter.com" target="_blank">
-                <span class="fa fa-twitter"></span>
-            </a>
-            <a id="signInButton" class="nav-link active text-white" href="#">SIGN IN</a>
-            <a class="btn btn-social-icon btn-facebook text-white" href="https://facebook.com" target="_blank">
-                <span class="fa fa-facebook"></span>
-            </a>
-
+        <nav class="navbar navbar-dark bg-dark fixed-top justify-content-center">
+            <div class="navbar-nav">
+                <div class="row">
+                    <a class="nav-link btn-social-icon btn-twitter mx-3" href="https://twitter.com" target="_blank">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a id="signInButton" class="nav-link mx-3" href="#">SIGN IN</a>
+                    <a class="nav-link btn-social-icon btn-facebook mx-3" href="https://facebook.com" target="_blank">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                </div>
+            </div>
         </nav>
+
         <div id="signInModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -100,6 +104,8 @@
                 <img src="img/mofongo.jpg" class="card-img-top card-img" alt="mofongo">
                 <div class="card-body">
                     <h5 class="card-title">Mofongo</h5>
+                    <p class="card-text">This is a classic mofongo stuffed with creole chicken.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 1 hour ago</small></p>
                 </div>
                 <div class="card-footer">
                     <a class="btn btn-outline-secondary recipe-demo" href="#"><small>CLICK FOR RECIPE</small>
@@ -110,9 +116,11 @@
                 <img src="img/tostones.jpg" class="card-img-top card-img" alt="tostones">
                 <div class="card-body">
                     <h5 class="card-title">Tostones</h5>
+                    <p class="card-text">These are tostones topped with Ropa Vieja.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-outline-secondary recipe-demo" href="#"><small>CLICK FOR RECIPE</small>
+                    <a class="btn btn-outline-secondary recipe-demo disabled" href="#"><small>CLICK FOR RECIPE</small>
                     </a>
                 </div>
             </div>
@@ -120,15 +128,18 @@
                 <img src="img/maduros.jpg" class="card-img-top card-img" alt="maduros">
                 <div class="card-body">
                     <h5 class="card-title">Maduros</h5>
+                    <p class="card-text">Maduros are addictively sweet.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-outline-secondary recipe-demo" href="#"><small>CLICK FOR RECIPE</small></a>
+                    <a class="btn btn-outline-secondary recipe-demo disabled" href="#"><small>CLICK FOR
+                            RECIPE</small></a>
                 </div>
 
             </div>
         </div>
 
-        <!--Modal for recipes starts here-->
+        <!--Modal for the recipe starts here-->
         <div id="recipeModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
@@ -192,7 +203,8 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button id="bookmarkRecipe" type="button" class="btn btn-outline-dark"><i
-                                class="fa fa-bookmark fa-lg" aria-hidden="true"></i></button>
+                                class="fa fa-bookmark fa-lg" aria-hidden="true"></i>
+                        </button>
                         <button type="button" class="btn btn-outline-dark" onclick="print()"><i
                                 class="fa fa-print fa-lg" aria-hidden="true"></i>
                         </button>
@@ -203,12 +215,16 @@
         <!--Modal for recipes ends here-->
     </div>
 
-    <nav class="nav fixed-bottom justify-content-center bg-dark py-4">
-        <a class="nav-link active text-white" href="#">HOME</a>
-        <a class="nav-link btn btn-outline-light" href="recipes.html">RECIPES</a>
-        <a class="nav-link text-white" href="about.html">ABOUT</a>
-
+    <nav class="navbar navbar-dark bg-dark fixed-bottom justify-content-center">
+        <div class="navbar-nav">
+            <div class="row">
+                <a class="nav-link active mx-3" href="#">HOME</a>
+                <a class="nav-link mx-3" href="recipes.html">RECIPES</a>
+                <a class="nav-link mx-3" href="about.html">ABOUT</a>
+            </div>
+        </div>
     </nav>
+
 </body>
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
