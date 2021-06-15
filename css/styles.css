@@ -24,15 +24,7 @@ p {
     object-fit: cover;
 }
 
-.recipe-category {
-    margin: 10px;
-    min-width: 75px;
-}
-
-.recipe-layout {
-    text-align: left;
-}
-
-.recipe-layout.p {
-    max-width: max-content;
+.category-card {
+    margin: 1rem;
+    border-width: thick;
 }
